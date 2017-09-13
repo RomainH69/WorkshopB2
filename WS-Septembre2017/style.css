@@ -1,0 +1,19 @@
+header {
+    text-align: center;
+    font-size: large;
+    background-color: dimgrey;
+}
+
+#txt {
+    font-size: large;
+    color: white;
+}
+
+
+#pacc {
+    background-color: forestgreen;
+}
+
+#pdef {
+    background-color: lightgreen;
+}
