@@ -1,7 +1,13 @@
+p{
+    font-family: 'Bungee Inline', cursive;
+}
 header {
     text-align: center;
-    font-size: large;
     background-color: dimgrey;
+    font-family: 'Bungee Inline', cursive;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
 }
 
 #txt {
@@ -9,11 +15,44 @@ header {
     color: white;
 }
 
-
-#pacc {
-    background-color: forestgreen;
+#intro {
+    top: 0;
+    height: 100%;
+    background-position: fixed;
+    width: 100%;
+    background-color: #2e8b57;
+    color: white;
+    vertical-align: middle;
 }
 
-#pdef {
-    background-color: lightgreen;
+#tx {
+    font-size: large;
+    font-style: oblique;
+    font-family: 'Bungee Inline', cursive;
+    vertical-align: middle;
+}
+
+img{
+    display:block;
+    width:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+#footer {
+    background-color: #2e8b57;
+    width: 100%;
+
+}
+
+#foot{
+    background-color: #2e8b57;
+    width: 100%;
+}
+
+button{
+    display: inline-block;
+    width: 5%;
+    margin: auto;
 }

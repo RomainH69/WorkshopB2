@@ -2,33 +2,109 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>NMP5PFPLPJ</title>
-    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="main.js">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ne Mangez Pas 5 Pas Fruits Et Pas Legumes Par Jour</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <header>
-    <p id="txt">Ne Mangez Pas 5 Pas Fruits Et Pas Legumes Par Jour</p>
+    Ne Mangez Pas 5 Pas Fruits Et Pas Legumes Par Jour
 </header>
 <body>
-<div id="pacc">
-    Nunc vero inanes flatus quorundam vile esse quicquid extra urbis pomerium nascitur aestimant praeter orbos et caelibes, nec credi potest qua obsequiorum diversitate coluntur homines sine liberis Romae.
-</div>
-<div id="pdef">
-    ljnqsrofneorngoinezrpg
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12" align="center">
-      <img src="images/coca.png" />
+    <div id="intro">
+        <marquee scrollamount="8" direction="left" id="tx" >Qu’est ce que tu fous sur internet ? T’as pas d’autres choses à faire ?          Bon puisque t’es la au lieu de regarder des chatons qui chie des arc-en-ciels sur Youtube viens plutôt voir.                Tu penses que ton alimentation n’a aucune conséquence sur ta santé et sur l’environnement ? Et bien détrompe-toi petit bonhomme. Je vais te renseigner un peu sur toutes les saletés que tu manges. </marquee>
     </div>
-  </div>
-</div>
+    <div class="w3-content w3-display-container">
+        <div class="Img">
+            <img src="image/coke.png"  border=0 style="width:640px; height:405px">
+            <p class="txtcoke" style="text-align: center">
+                Santé: Buvez une canette de coca-colo  de 33cl (35g) par jour c’est s’assurer d’avoir la dose maximale de sucre conseillé par l’OMS (30g).<br/>
+                N’hésitez à pas en boire 2 ou 3 par jours. Le diabète c’est comme la coupe du monde ça se mérite.<br/>
+                Environnement : Coca colo company est très concerné par l’écologie, ils ne produisent que 1M5 tonnes de co2 par an.<br/>
+                Sachant que 1tonne de co2 ne représente que 4800Km fait par un 4x4 en ville.<br/>
+                Une broutille
+            </p>
+        </div>
+        <div class="Img">
+            <img src="image/nut.png"  border=0 style="width:640px; height:405px">
+            <p class="txtnut" style="text-align: center">
+                Ferrera utilise 20% d’huile de palme dans la production de Nulella.</br>
+                L’huile de palme est connue pour boucher les artères.</br>
+                À ce jour, les plantations d’huile de palme s’étendent sur 27 millions d'hectares à travers le monde. </br>
+                Soit un territoire grand comme la Nouvelle-Zélande d’où ont été chassés habitants et animaux pour faire place à un « désert vert ».</br>
+                C’est bien assez pour boucher tes artères.
+            </p>
+        </div>
+        <div class="Img">
+            <img src="image/viande.png" border=0 style="width:640px; height:405px">
+            <p class="txtviande" style="text-align: center">
+                Production d'1 tonne de viande bovine = 27 tonnes de blé<br/>
+                *Drop the mic*<br/>
+                Tu veux être immunisé a tous les antibiotiques pour faire semblant d’avoir un sida, bouffe de la bonne vache !
+            </p>
+        </div>
+        <div class="Img">
+            <img src="image/cafe.png" border=0 style="width:640px; height:405px">
+            <p class="txtcafe" style="text-align: center">
+                N'hésitez pas à en abuser, sachez que la consommation du produit peut provoquer insomnie, confusion et troubles du rythme cardiaque.<br/>
+                Des cas mortels d’intoxication aiguë ont été observés après 50 tasses !<br/>
+                Si vous aussi vous aimez votre planète, aidez les lobbys du café , ils déforestent la forêt avec modernité !
+            </p>
+        </div>
+        <div class="Img">
+            <img src="image/ketchup.png" border=0 style="width:640px; height:405px">
+            <p class="txtketchup" style="text-align: center">
+                N'hésitez pas à en abuser, sachez que la consommation du produit peut provoquer insomnie, confusion et troubles du rythme cardiaque.<br/>
+                Des cas mortels d’intoxication aiguë ont été observés après 50 tasses !<br/>
+                Si vous aussi vous aimez votre planète, aidez les lobbys du café , ils déforestent la forêt avec modernité !
+            </p>
+        </div>
+        <div id="butt">
+            <p style="text-align: center">
+        <button class="slideButton slide-black slide-display-left buttonSlideLeft" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="slideButton slide-black slide-display-right buttonSlideRight" onclick="plusDivs(1)">&#10095;</button>
+            </p>
+        </div>
+    </div>
 
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/main.js"></script>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("Img");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+    </script>
 </body>
+
+<footer class="row navbar-default">
+    <div class="container" id="foot">
+        <div class="col-sm-6">
+            <p style="font-size: large">A propos de nous</p>
+            <p>Nous sommes Epsilon, nous sommes légion, toujours là pour vous aider à voir la lumière.
+                Pour plus d'information sur notre vision n'hésitez pas à nous contacter au plus vite sur colpapier12@gmail.com</p>
+        </div>
+        <div class="row">
+            <div style="text-align: right" class="col-sm-6">
+                <p style="font-size: large">Copyright &copy; EPSILON</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </html>
